@@ -4,6 +4,10 @@ body {
     font-family: 'Libre Baskerville', serif;
 }
 
+body * {
+    box-sizing: border-box;
+}
+
 .main-login {
     width: 100vw;
     height: 100vh;
@@ -24,6 +28,10 @@ body {
 
 .left-login > h1 {
     color: #f0f8ff;
+}
+
+.left-login-image {
+    width: 25vw;
 }
 
 .right-login {
@@ -100,9 +108,37 @@ body {
     background: #e9e6e6;
     cursor: pointer;
     box-shadow: 0px 9px 40px -13px #eeeaea;
-    
 }
 
+@media only screen and (max-width: 950px){
+    .card1{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+}
+
+.left-login{
+    width: 100%;
+    height: auto;
+}
+
+.right-login{
+    width: 100%;
+    height: auto;
+}
+
+.left-login-image{
+    width: 60vh;
+}
+
+.card1{
+    width: 90%;
+}
 
 
 
